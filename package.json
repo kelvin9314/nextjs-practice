@@ -6,8 +6,8 @@
     "dev": "next dev src",
     "build": "next build && next export",
     "start": "next start src",
-    "eslint-check": "yarn eslint .",
-    "eslint-ci": "yarn eslint src/ --fix",
+    "eslint-check": "yarn eslint ./src",
+    "eslint-ci": "yarn eslint ./src --fix",
     "run-static": "yarn serve out"
   },
   "dependencies": {
@@ -33,14 +33,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-add": "git add ."
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "yarn prettier --write",
-      "yarn eslint-ci"
+    "./src/**/*.{js,jsx}": [
+      "eslint --fix"
     ]
   }
 }
