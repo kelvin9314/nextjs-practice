@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start src",
     "eslint-check": "yarn eslint .",
-    "eslint-ci": "yarn eslint .src/ --fix",
+    "eslint-ci": "yarn eslint ./src/ --fix",
     "run-static": "yarn serve out"
   },
   "dependencies": {
