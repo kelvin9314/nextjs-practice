@@ -15,4 +15,4 @@ eslint-check:
     paths:
       - node_modules/
   script:
-    - yarn eslint-ci --runInBand --ci
+    - yarn eslint-ci
