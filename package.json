@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next dev src",
+    "build": "next build && next export",
+    "start": "next start src",
     "eslint-check": "yarn eslint .",
-    "eslint-ci": "yarn eslint . --fix"
+    "eslint-ci": "yarn eslint . --fix",
+    "run-static": "yarn serve out"
   },
   "dependencies": {
     "next": "9.2.2",
@@ -25,6 +26,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "serve": "^11.3.0"
   }
 }
