@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start src",
     "eslint-check": "yarn eslint .",
-    "eslint-ci": "yarn eslint . --fix",
+    "eslint-ci": "yarn eslint .src/ --fix",
     "run-static": "yarn serve out"
   },
   "dependencies": {
@@ -39,8 +39,7 @@
   "lint-staged": {
     "./src/*.{js,jsx,ts,tsx}": [
       "yarn prettier --write",
-      "eslint src/*.js --fix-dry-run",
-      "git add"
+      "yarn eslint-ci"
     ]
   }
 }
