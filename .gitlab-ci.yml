@@ -1,0 +1,18 @@
+stages:
+  - test
+
+variables:
+  APP_VERSION: ""
+
+before_script:
+- yarn
+
+
+eslint-check:
+  image: node:alpine
+  stage: test
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - yarn eslint-ci

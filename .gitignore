@@ -17,7 +17,6 @@
 
 # misc
 .DS_Store
-.env*
 
 # debug
 npm-debug.log*
@@ -101,8 +100,6 @@ web_modules/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-# Next.js build output
-.next
 
 # Nuxt.js build / generate output
 .nuxt
