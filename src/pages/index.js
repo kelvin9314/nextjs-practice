@@ -3,13 +3,13 @@ import { Toast, ToastBody, ToastHeader, Button } from 'reactstrap'
 import Link from 'next/link'
 
 const Index = props => {
-  const [isOpen, setIsOpen] = React.useState(false)
+  // const [isOpen, setIsOpen] = React.useState(false)
 
   React.useEffect(() => {
-    console.log(location.query)
+    // console.log(location.query)
   }, [])
 
-  const toggle = () => setIsOpen(!isOpen)
+  // const toggle = () => setIsOpen(!isOpen)
   console.log(props)
   return (
     <div>
@@ -53,6 +53,7 @@ const Index = props => {
 
 // 只能在 pages 中使用
 Index.getInitialProps = async ({ req }) => {
+  // Index.getStaticProps = async ({ req }) => {
   const text = 'this is from server side'
   return { text }
 }

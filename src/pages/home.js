@@ -9,7 +9,8 @@ const Home = () => (
     </Head>
 
     <main>
-      <Link href={{ pathname: '/index', query: { from: location.pathname } }}>
+      {/* <Link href={{ pathname: '/index', query: { from: location.pathname } }}> */}
+      <Link href={{ pathname: '/index' }}>
         <button>back to index</button>
       </Link>
       <h1 className="title">
@@ -198,5 +199,4 @@ const Home = () => (
     `}</style>
   </div>
 )
-
 export default Home

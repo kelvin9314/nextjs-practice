@@ -6,9 +6,6 @@ const UseMouse = () => {
   const ref = React.useRef(null)
   const { docX, docY, posX, posY, elX, elY, elW, elH } = useMouse(ref)
 
-  const a = 'i am kelvin 123'
-  console.log(a)
-
   return (
     <div>
       <button onClick={() => Router.push('/index')}>Back to index</button>
