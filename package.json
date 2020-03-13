@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build && next export",
     "start": "next start src",
     "eslint-ci": "yarn eslint ./src",
@@ -11,6 +11,7 @@
     "run-static": "yarn serve out"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "next": "9.2.2",
     "react": "16.13.0",
@@ -33,15 +34,5 @@
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "serve": "^11.3.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./src/**/*.{js,jsx}": [
-      "eslint ./src --fix"
-    ]
   }
 }
