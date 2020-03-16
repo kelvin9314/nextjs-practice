@@ -8,7 +8,8 @@
     "start": "next start",
     "eslint-ci": "yarn eslint ./src",
     "lint": "yarn eslint ./src --fix",
-    "run-static": "yarn serve out"
+    "run-static": "yarn serve out",
+    "serve-build": "yarn serve ./out -l 22880"
   },
   "dependencies": {
     "axios": "^0.19.2",

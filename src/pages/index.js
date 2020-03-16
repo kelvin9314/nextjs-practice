@@ -31,9 +31,9 @@ const Index = props => {
         <Link href="/useMouse">
           <Button color="secondary">useMouse</Button>
         </Link>
-        <Button color="success" disabled>
-          success
-        </Button>
+        <Link href="/todos/all">
+          <Button color="success">todos all</Button>
+        </Link>
         <Button color="info" disabled>
           info
         </Button>
