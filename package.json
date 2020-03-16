@@ -5,15 +5,16 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start src",
+    "start": "next start",
     "eslint-ci": "yarn eslint ./src",
     "lint": "yarn eslint ./src --fix",
     "run-static": "yarn serve out"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
-    "next": "9.2.2",
+    "next": "^9.3.0",
     "next-compose-plugins": "^2.2.0",
     "react": "16.13.0",
     "react-dom": "16.13.0",
