@@ -3,18 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev src",
+    "dev": "next",
     "build": "next build && next export",
-    "start": "next start src",
+    "start": "next start",
     "eslint-ci": "yarn eslint ./src",
     "lint": "yarn eslint ./src --fix",
-    "run-static": "yarn serve out"
+    "run-static": "yarn serve out",
+    "serve-build": "yarn serve ./out -l 22880"
   },
   "dependencies": {
-    "next": "9.2.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "next": "^9.3.0",
+    "next-compose-plugins": "^2.2.0",
     "react": "16.13.0",
     "react-dom": "16.13.0",
-    "react-use": "^13.27.0"
+    "react-use": "^13.27.0",
+    "reactstrap": "^8.4.1",
+    "swr": "^0.1.18"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -25,20 +33,11 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "serve": "^11.3.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./src/**/*.{js,jsx}": [
-      "eslint ./src --fix"
-    ]
   }
 }

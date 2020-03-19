@@ -17,10 +17,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   rules: {
+    "react/prop-types": 0,
     'react/react-in-jsx-scope': 'off',
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 }
