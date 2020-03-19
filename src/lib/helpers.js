@@ -1,6 +1,7 @@
-function printUser(firstName, lastName, number, street, code, city, country) {
-  console.log(`${firstName} ${lastName} lives at ${number}, ${street}, ${code} in ${city}, ${country}`)
+export const getRandomItemsFromArray = (arr, numbers) => {
+  const result = []
+  for (let index = numbers; index > 0; index--) {
+    result.push(arr[Math.floor(Math.random() * arr.length)])
+  }
+  return result
 }
-printUser('John', 'Doe', 48, '998 Primrose Lane', 53718, 'Madison', 'United States of America')
-
-console.log('123456789123123')
