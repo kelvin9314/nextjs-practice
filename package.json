@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "12.16.1",
-    "yarn": "1.22.4"
+    "node": ">=12",
+    "yarn": ">=1.22"
   },
   "scripts": {
     "dev": "next",
@@ -18,21 +18,21 @@
     "heroku-postbuild": "yarn build"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
     "next": "^9.3.0",
     "next-compose-plugins": "^2.2.0",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
-    "react-use": "^13.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-use": "^15.3.4",
     "reactstrap": "^8.4.1",
-    "swr": "^0.1.18"
+    "swr": "^0.3.5"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -40,11 +40,11 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
+    "prettier": "^2.1.2",
     "serve": "^11.3.0"
   }
 }
