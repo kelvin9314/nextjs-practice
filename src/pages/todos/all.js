@@ -11,7 +11,7 @@ function Todos({ todos }) {
         <Button color="primary">back to index</Button>
       </Link>
       <ListGroup>
-        {todos.map(todo => (
+        {todos.map((todo) => (
           <ListGroupItem tag={'a'} href={`/todos/${todo.id}`} key={todo.id}>
             {todo.title}
           </ListGroupItem>

@@ -8,7 +8,7 @@ const UseMouse = () => {
 
   return (
     <div>
-      <button onClick={() => Router.push('/index')}>Back to index</button>
+      <button onClick={() => Router.push('/')}>Back to index</button>
       <div ref={ref}>
         <div>
           Mouse position in document - x:{docX} y:{docY}

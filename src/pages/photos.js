@@ -8,7 +8,7 @@ const Photos = ({ photos }) => {
   return (
     <div>
       <h2 style={{ textAlign: 'center', border: '1px solid #ccc' }}> Show three photos on each request randomly</h2>
-      {photos.map(photo => (
+      {photos.map((photo) => (
         <Media key={photo.id} style={{ padding: '4px' }}>
           <Media left href="#">
             <Media object src={photo.thumbnailUrl} alt="Generic placeholder image" />

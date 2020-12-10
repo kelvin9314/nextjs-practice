@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Toast, ToastBody, ToastHeader, Button } from 'reactstrap'
 import Link from 'next/link'
 
-const Index = props => {
+const Index = (props) => {
   // const [isOpen, setIsOpen] = React.useState(false)
 
   React.useEffect(() => {

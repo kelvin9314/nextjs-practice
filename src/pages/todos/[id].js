@@ -35,7 +35,7 @@ function Todo({ todo, todosLength }) {
 
 export async function getStaticPaths() {
   const { data: todos } = await axios.get('https://jsonplaceholder.typicode.com/todos')
-  const paths = todos.map(post => ({
+  const paths = todos.map((post) => ({
     params: { id: post.id.toString() },
   }))
 
