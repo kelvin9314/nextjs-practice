@@ -22,7 +22,7 @@
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "next": "^9.3.0",
     "next-compose-plugins": "^2.2.0",
     "react": "^16.13.1",
